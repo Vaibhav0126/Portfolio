@@ -28,72 +28,69 @@ const projects = [
   },
   {
     title: "Application for Online Registration of Dairy and Poultry Farmers ",
-    description: "Ministry of Fisheries, Animal Husbandry and Dairying, Government of India (Smart India Hackathon) ",
+    description:
+      "Ministry of Fisheries, Animal Husbandry and Dairying, Government of India (Smart India Hackathon) ",
     imgUrl: projImg1,
     githubUrl: "https://github.com/",
   },
 ];
 
+const projects2 = [
+  {
+    title: "Utility Based Cache(UCP) Partition on Champ-sim",
+    description: "under the guidance of Dr. Shirshendu Das",
+    imgUrl: projImg2,
+    githubUrl: "https://github.com/",
+  },
+  {
+    title: "CUCU Compiler",
+    description: "under the guidance of Dr. Deepti R.Bathula",
+    imgUrl: projImg3,
+    githubUrl: "https://github.com/",
+  },
+];
 
-  const projects2 = [
-    
-    {
-      title: "Utility Based Cache(UCP) Partition on Champ-sim",
-      description: "under the guidance of Dr. Shirshendu Das",
-      imgUrl: projImg2,
-      githubUrl: "https://github.com/",
-    },
-    {
-      title: "CUCU Compiler",
-      description: "under the guidance of Dr. Deepti R.Bathula",
-      imgUrl: projImg3,
-      githubUrl: "https://github.com/",
-    },
-  ];
-
-  
-    const projects3 = [
-      
-      {
-        title: "Implementation and Analysis of Skip Lists",
-        description: "under the guidance of Dr. Anil Shukla",
-        imgUrl: projImg3,
-        githubUrl: "https://github.com/",
-      },
-      {
-        title: "Hardware Design",
-        description: "under the guidance of Dr. Neeraj Goel",
-        imgUrl: projImg2,
-        githubUrl: "https://github.com/",
-      },
-      {
-        title: "Open forum discussion platform for Waste Management Techniques",
-        description: "under the guidance of Dr. Kamal Kumar Chaudhary",
-        imgUrl: projImg3,
-        githubUrl: "https://github.com/",
-      },
-    ];
-    export const Projects = () => {
-    
-    return (
-      <section className="project" id="projects">
+const projects3 = [
+  {
+    title: "Implementation and Analysis of Skip Lists",
+    description: "under the guidance of Dr. Anil Shukla",
+    imgUrl: projImg3,
+    githubUrl: "https://github.com/",
+  },
+  {
+    title: "Hardware Design",
+    description: "under the guidance of Dr. Neeraj Goel",
+    imgUrl: projImg2,
+    githubUrl: "https://github.com/",
+  },
+  {
+    title: "Open forum discussion platform for Waste Management Techniques",
+    description: "under the guidance of Dr. Kamal Kumar Chaudhary",
+    imgUrl: projImg3,
+    githubUrl: "https://github.com/",
+  },
+];
+export const Projects = () => {
+  return (
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                className={
-                  isVisible ? "animate__animated animate__fadeIn" : ""
-                }
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Throughout my career, I’ve worked on a variety of projects
+                    that span across full-stack development, machine learning,
+                    and software engineering. These projects have allowed me to
+                    demonstrate my proficiency in front-end and back-end
+                    technologies, data analysis, and building scalable
+                    applications. Here are a few key highlights:
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -125,14 +122,14 @@ const projects = [
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                      <Row>
+                        <Row>
                           {projects2.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                      <Row>
+                        <Row>
                           {projects3.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
